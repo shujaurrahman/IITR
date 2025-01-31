@@ -34,6 +34,6 @@ jobs:
         username: if0_38222285  # Your InfinityFree username
         password: ${{ secrets.FTP_PASSWORD }}  # Use a GitHub secret for FTP password
         local-dir: ./  # Assuming your repo's root contains the main domain files
-        server-dir: ./htdocs/  # Ensure it ends with a /
+        server-dir: ./  # Ensure it ends with a /
         exclude: .git*  # Exclude Git files from deployment 
         
