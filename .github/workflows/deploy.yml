@@ -21,12 +21,7 @@ jobs:
     - name: Validate PHP Syntax (optional)
       run: |
         find . -name "*.php" -print0 | xargs -0 -n1 php -l
-
-    - name: Update "last updated" date in JSON
-      run: |
-        DATE=$(date +"%d-%m-%Y")
-        sed -i "s/last updated on [0-9-]*/last updated on $DATE/" content/colophon.json
-
+        
     - name: Deploy to InfinityFree via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
