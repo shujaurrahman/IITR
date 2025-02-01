@@ -1,4 +1,4 @@
-name: Deploy to shujaurrahman.me
+name: Deploy to InfinityFree
 
 on:
   push:

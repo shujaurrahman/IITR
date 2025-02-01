@@ -7,5 +7,7 @@
 </head>
 <body>
     <h1>Welcome to IITR, Built and Environment Lab</h1>
+    <h1>Testing the Pipeline CICD Implementation.</h1>
+    <h1>echo success</h1>
 </body>
 </html>
