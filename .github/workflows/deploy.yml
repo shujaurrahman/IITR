@@ -21,7 +21,7 @@ jobs:
     - name: Validate PHP Syntax (optional)
       run: |
         find . -name "*.php" -print0 | xargs -0 -n1 php -l
-        
+
     - name: Deploy to InfinityFree via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
@@ -29,6 +29,6 @@ jobs:
         username: if0_38222285  # Your InfinityFree username
         password: ${{ secrets.FTP_PASSWORD }}  # Use a GitHub secret for FTP password
         local-dir: ./  # Assuming your repo's root contains the main domain files
-        server-dir: ./  # Ensure it ends with a /
+        server-dir: ./htdocs/  # Ensure it ends with a /
         exclude: .git*  # Exclude Git files from deployment 
         
